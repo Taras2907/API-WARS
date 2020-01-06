@@ -1,0 +1,120 @@
+#main-table td, #main-table th, #modal-table td, #modal-table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#main-table{
+    position: absolute;
+    font-family: 'Geostar Fill', cursive;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+    animation-name: animateBottom;
+    animation-duration: 4s;
+
+}
+@keyframes next {
+  from{ left:-100px; opacity:0 }
+  to{ left:0; opacity:1 }
+}
+@keyframes previous {
+  from{ right:-100px; opacity:0 }
+  to{ left:0; opacity:1 }
+}
+@keyframes animateBottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ left:0; opacity:1 }
+}
+#main-table th, #modal-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+#main-table tr:nth-child(even), #modal-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#main-table tr:hover , #modal-table tr:hover{
+    background-color: #ddd;
+}
+h2{
+    font-family: 'Geostar Fill', cursive;
+    padding: 10px;
+    margin-left: 5%;
+}
+.container-fluid{
+    font-family: 'Geostar Fill', cursive;
+}
+#next_previous {
+    padding: 10px;
+    font-family: 'Geostar Fill', cursive;
+    margin-left: 5%;
+}
+.btn-primary{
+    border-radius: 4px;
+}
+#modal-table td, #modal-table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.container{
+    margin-left: 100%;
+    display: flex;
+}
+#login, #register{
+    width: 160px;
+    padding: 15px;
+    margin-left:10%;
+}
+.error{
+    padding-left: 90px;
+    color:red;
+}
+#voteConfirmMessage{
+    position: fixed;
+    margin-left: 30%;
+    margin-top: 10%;
+
+}
+.toast-header{
+    text-align: center;
+    border-radius: 4px;
+    height: 10%;
+    background-color: seagreen;
+    color:white;
+}
+strong{
+    opacity: 0.9;
+    padding: 20px;
+}
+video{
+    height: 10%;
+    z-index: 100;
+}
+h5{
+    text-align: center;
+}
+#modal-table {
+    width: 100%;
+    position: relative;
+}
+.loader {
+    display: block;
+    
+    margin-left: 45%;
+    margin-top:30%;
+    position: absolute;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid grey; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="jumbotron">
+        {% if user_already_exists %}
+            <p class="error"><strong>Error: </strong>{{ user_already_exists }}</p>
+        {% endif %}
+        <div class="container">
+            <form action="{{ url_for('registration') }}" method="post">
+                <p>Enter username<br><input name="username" type="text" required></p>
+                <p>Enter password<br><input name="password" type="password" required></p>
+                <button type="submit" class="btn-success btn-lg" id="register">Register</button>
+
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
